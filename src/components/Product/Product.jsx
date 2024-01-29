@@ -16,3 +16,6 @@ const Product = (props) => {
 };
 
 export default Product;
+
+
+// addToCart={addToCart} key={product.id} product={product}
