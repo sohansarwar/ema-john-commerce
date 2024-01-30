@@ -1,0 +1,22 @@
+.cart {
+  padding: 25px;
+  position: sticky;
+  top: 100px;
+}
+
+.cart h2 {
+  margin-top: 18px;
+  text-align: center;
+}
+.cal  {
+  margin-top: 50px;
+  margin-left: 23px;
+  font-size: large;
+}
+
+.cal p {
+  padding: 10px;
+}
+.cal h6{
+  margin-left: 16px;
+}

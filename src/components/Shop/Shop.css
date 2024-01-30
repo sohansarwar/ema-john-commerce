@@ -9,22 +9,7 @@
   margin: 50px;
   grid-row-gap: 20px;
 }
-
-.cart {
-  background-color: rgba(255, 153, 0, 0.30);
+.cart-main{
+  background-color: #FF99004D;
 }
 
-.cart h2 {
-  margin-top: 18px;
-  text-align: center;
-}
-
-.cal {
-  margin-top: 50px;
-  margin-left: 23px;
-  font-size: large;
-}
-
-.cal p {
-  padding: 10px;
-}
