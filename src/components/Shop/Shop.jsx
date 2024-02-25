@@ -8,16 +8,21 @@ const Shop = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
   useEffect(() => {
-    // fetch('../../../fakeData/products.json')
     fetch('https://raw.githubusercontent.com/ProgrammingHero1/ema-john-resources/main/fakeData/products.json')
       .then(res => res.json())
       .then(data => setProducts(data))
-
   }, []);
   useEffect(() => {
-    const getData = getShoppingCart(products.id);
-    console.log(getData);
-  },[])
+    const storedCart = getShoppingCart();
+    for (const id in storedCart) {
+      const addedProducts = products.find(product => product.id === id);
+      if (addedProducts) {
+        const quantity = storedCart[id];
+        addedProducts.quantity = quantity;
+        console.log(addedProducts);
+      }
+    }
+  }, [products])
 
   const addToCart = product => {
     const newCart = [...cart, product];
